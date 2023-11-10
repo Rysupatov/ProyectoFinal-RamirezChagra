@@ -53,6 +53,11 @@
         display: initial;
     }
 
+    header .navBar li a:hover {
+        padding: 10px;
+        color: #e7c084;
+        border-bottom: none
+    }
 }
 
 /* FOOTER */
