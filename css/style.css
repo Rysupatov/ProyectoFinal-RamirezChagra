@@ -32,6 +32,7 @@
         right: 0;
         border: 1px solid rgb(0, 0, 0, .1);
         display: none;
+        background-color: #90a057;
     }
 
 
@@ -42,11 +43,11 @@
     header .navBar ul li {
         width: 100%;
         padding: 10px;
-        border: 1px solid #C0995D;
+        border: 2px solid #2e6021;
         border-radius: 14px;
         margin: 2px;
         text-align: center;
-    }
+           }
 
     #menuResponsive:checked~.navBar {
         display: initial;
@@ -95,8 +96,8 @@
 
 header label {
     font-size: 30px;
-    color: #C0995D;
-}
+    color: ghostwhite;
+    }
 
 body {
     padding-top: 100px;
