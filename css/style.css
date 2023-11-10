@@ -309,3 +309,13 @@ footer .social {
 
 /* POPULAR */
 
+.gridHijo4 {
+    background-color: #e7c084;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* CARDS */
+
