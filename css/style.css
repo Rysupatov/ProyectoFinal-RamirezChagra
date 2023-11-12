@@ -94,10 +94,11 @@ header .navBar a:hover {
     main .indexGridPadre {
         grid-template-areas:
             "publi publi"
+            "titulo titulo"
             "populares populares"
             "novedades novedades";
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 400px 100px 1fr 1fr;
     }
 
     .gridHijo2 {
@@ -108,6 +109,7 @@ header .navBar a:hover {
         font-size: 20px;
         margin-top: 15px;
         padding: 8px 8px 0px 8px;
+        text-align: center;
     }
 
     .indexGridPadre .gridHijo1 p {
@@ -116,11 +118,85 @@ header .navBar a:hover {
         margin-left: 15px;
         margin-bottom: 40px;
         padding: 0px 8px 8px 8px;
-        margin-top: 10px;
+        margin-top: 50px;
+        text-align: center;
     }
 
     .gridHijo4 .card {
-        flex-direction: column;
+        width: 40%;
+        height: 400px;
+    }
+
+    .gridHijo4 .card .cardImg {
+        height: 250px;
+        width: 100%;
+       }
+
+    .card h5 {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .card .cardTxt p {
+        display: none;
+    }
+    
+    .card .cardPrecio {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    .indexGridPadre .gridHijo5 .cardsTitle h2 {
+        margin-top: 2vw;
+        font-size: 4vw;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    main .indexGridPadre {
+        grid-template-areas:
+            "publi"
+            "titulo"
+            "populares"
+            "novedades";
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 100px 1fr 1fr;
+    }
+
+    .gridHijo2 {
+        display: none;
+    }
+   
+    .gridHijo4 .card {
+        width: 100%;
+        height: 600px;
+    }
+
+    .gridHijo4 .card .cardImg {
+        height: 400px;
+        width: 100%;
+       }
+
+    .card h5 {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .card .cardTxt p {
+        display: flex;
+        font-size: 20px;
+    }
+    
+    .gridHijo4 .card .cardPrecio p {
+        font-size: 35px;
+        font-weight: bolder;
+    }
+
+    .indexGridPadre .gridHijo5 .cardsTitle h2 {
+        margin-top: 2vw;
+        font-size: 6vw;
+        width: 90%;
     }
 }
 
@@ -255,10 +331,11 @@ footer .social {
     display: grid;
     grid-template-areas:
         "publi publi publi"
+        "titulo titulo titulo"
         "populares populares populares"
         "foto1 novedades novedades";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 100px 1fr 1fr;
 }
 
 .gridHijo1 {
@@ -281,6 +358,10 @@ footer .social {
 
 .gridHijo4 {
     grid-area: populares;
+}
+
+.gridHijo5 {
+    grid-area: titulo
 }
 
 
@@ -317,6 +398,30 @@ footer .social {
 
 /* POPULAR */
 
+.gridHijo5 {
+    background-color: #e7c084;
+    display: flex;
+    justify-content: center;
+}
+
+.gridHijo5 .cardsTitle {
+    display: inherit;
+align-items: center;
+justify-content: center;
+}
+
+.gridHijo5 .cardsTitle h2 {
+    text-align: center;
+    border: #90a057 solid 2px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: ghostwhite;
+    font-weight: 800;
+    font-size: 4vw;
+    margin-top: 8vw;
+}
+
 .gridHijo4 {
     background-color: #e7c084;
     display: flex;
@@ -332,6 +437,7 @@ footer .social {
     justify-content: center;
     width: 100%;
     min-height: 100vh;
+    flex-wrap: wrap;
    }
 
 .card {
@@ -347,8 +453,7 @@ footer .social {
 .card .cardImg {
     height: 60%;
     width: 100%;
-   
-}
+   }
 
 .card .cardImg img {
 object-fit: cover;
