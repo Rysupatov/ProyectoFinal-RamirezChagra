@@ -15,7 +15,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="contactoBody">
     <header>
         <div class="navBarLogo">
             <img src="../media/logo.png" alt="Rabiohsa, productos naturales">
@@ -37,10 +37,54 @@
     </header>
 
 
-    <main>
-
-
+    <main class="contactoMain">
+        <div class="contactoContainer">
+            <div class="formulario">
+                <form>
+                    <div>
+                        <label for="formNombre">Nombres*</label>
+                        <input type="text" id="formNombre" placeholder="Ej: Matias" required>
+                    </div>
+    
+                    <div>
+                        <label for="formApellido">Apellidos*</label>
+                        <input type="text" id="formApellido" placeholder="Ej: Ramírez" required>
+                    </div>
+                    <div>
+                        <label for="formMail">Correo electrónico*</label>
+                        <input type="email" id="formMail" placeholder="Ej: tumailaca@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="formTel">Teléfono</label>
+                        <input type="text" id="formTel" placeholder="Ej: 15-0000-0000">
+                    </div>
+                    <div>
+                        <label class="formCommentLabel" for="formComment">Comentarios*</label>
+                        <textarea name="formComment" id="formComment" cols="20" rows="10"
+                            placeholder="Ej: Me encantó su producto y página web!"></textarea>
+                    </div>
+                    <p class="camposObligatorios">
+                        Las casillas marcadas con "*" son obligatorias.
+                    </p>
+                    <span class="formButtons">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Restablecer">
+                    </span>
+                </form>
+            </div>
+    
+            <div class="contactoTxt">
+                <h1 class="contactoTitle">
+                 Contactanos!
+             </h1>
+     
+             <h2 class="contactoSubtitle">
+                 Ayudanos a mejorar tu experiencia con Rabiohsa!
+             </h2> 
+             </div>
+        </div>
     </main>
+
 
     <footer>
         <div class="social">
