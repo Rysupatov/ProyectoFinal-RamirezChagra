@@ -17,13 +17,14 @@
         cursor: pointer;
         display: none;
     }
-header .navBar a:hover {
-    border-bottom: 4px solid #e7c084;
-}
 
-.gridHijo3 a:hover {
-    background-color: #e2b065;
-}
+    header .navBar a:hover {
+        border-bottom: 4px solid #e7c084;
+    }
+
+    .gridHijo3 a:hover {
+        background-color: #e2b065;
+    }
 
 }
 
@@ -92,7 +93,7 @@ header .navBar a:hover {
     }
 }
 
-/* INDEX */
+/* INDEX -------------------------------------------------------------*/
 
 @media (max-width: 1024px) {
     main .indexGridPadre {
@@ -134,21 +135,22 @@ header .navBar a:hover {
     .gridHijo4 .card .cardImg {
         height: 250px;
         width: 100%;
-       }
+    }
 
     .card h5 {
         font-size: 20px;
         padding: 10px;
     }
-    
+
     .card .cardTxt p {
         display: none;
     }
-    
+
     .card .cardPrecio {
         font-size: 18px;
         font-weight: bolder;
     }
+
     .indexGridPadre .gridHijo5 .cardsTitle h2 {
         margin-top: 2vw;
         font-size: 4vw;
@@ -171,7 +173,7 @@ header .navBar a:hover {
     .gridHijo2 {
         display: none;
     }
-   
+
     .gridHijo4 .card {
         width: 100%;
         height: 600px;
@@ -180,18 +182,18 @@ header .navBar a:hover {
     .gridHijo4 .card .cardImg {
         height: 400px;
         width: 100%;
-       }
+    }
 
     .card h5 {
         font-size: 20px;
         padding: 10px;
     }
-    
+
     .card .cardTxt p {
         display: flex;
         font-size: 20px;
     }
-    
+
     .gridHijo4 .card .cardPrecio p {
         font-size: 35px;
         font-weight: bolder;
@@ -220,19 +222,19 @@ header .navBar a:hover {
     }
 
     .gridHijo3 a {
-text-decoration: none;
-font-size: 28px;
-color: ghostwhite;
-background-color: #e7c084;
-border: 1px solid #76592E;
-margin-top: 35px;
-padding: 10px;
-border-radius: 14px;
+        text-decoration: none;
+        font-size: 28px;
+        color: ghostwhite;
+        background-color: #e7c084;
+        border: 1px solid #76592E;
+        margin-top: 35px;
+        padding: 10px;
+        border-radius: 14px;
     }
 }
 
 
-/* CONTACTO */
+/* CONTACTO ------------------------------------------------------------------------*/
 
 @media (max-width: 480px) {
     .contactoTxt {
@@ -246,32 +248,32 @@ border-radius: 14px;
     .contactoContainer .formulario form input {
         font-size: 2vh;
     }
-    
+
     .formulario form label {
-    font-size: 2vh;    
+        font-size: 2vh;
     }
-    
+
     .formulario form textarea {
-       font-size: 2vh;
+        font-size: 2vh;
     }
-    
+
     form .formCommentLabel {
-    font-size: 2vh;
+        font-size: 2vh;
     }
-    
+
     form .camposObligatorios {
-    font-size: 2vh
+        font-size: 2vh
     }
-    
+
     .form .formulario .formButtons {
         justify-content: space-evenly;
     }
-    
+
     form .formulario .formButtons input {
         font-size: 2vh;
-       }
+    }
 
-  
+
     .contactoTitle {
         text-align: center;
     }
@@ -293,32 +295,32 @@ border-radius: 14px;
     .contactoContainer .formulario form input {
         font-size: 2.5vh;
     }
-    
+
     .formulario form label {
-    font-size: 2.5vh;    
+        font-size: 2.5vh;
     }
-    
+
     .formulario form textarea {
-       font-size: 2.5vh;
+        font-size: 2.5vh;
     }
-    
+
     form .formCommentLabel {
-    font-size: 2.5vh;
+        font-size: 2.5vh;
     }
-    
+
     form .camposObligatorios {
-    font-size: 2.5vh
+        font-size: 2.5vh
     }
-    
+
     .form .formulario .formButtons {
         justify-content: space-evenly;
     }
-    
+
     form .formulario .formButtons input {
         font-size: 2.5vh;
-       }
+    }
 
-   
+
     .contactoTitle {
         text-align: center;
     }
@@ -327,6 +329,27 @@ border-radius: 14px;
         text-align: center;
     }
 }
+
+/* FERIAS ---------------------------------------------------------- */
+
+ @media (max-width: 1024px) {    
+     
+    .feriasCardContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+
+    .feriasCardContainer .horariosFormat {
+        width: 70%;
+    }
+ }
+
+ @media (max-width: 480px) {
+    .feriasCardContainer .horariosFormat {
+        width: 90%;
+    }
+ }
 
 /* GENERAL ----------------------------------------------------------------------------------------------------------------------------*/
 
@@ -373,7 +396,7 @@ header .navBarLogo img:hover {
 header .navBar li a:hover {
     padding: 10px;
     color: #e7c084;
-   }
+}
 
 .navBar a {
     text-decoration: none;
@@ -464,7 +487,7 @@ footer .social {
 
 .gridHijo2 {
     grid-area: foto1;
-    }
+}
 
 .gridHijo3 {
     grid-area: novedades;
@@ -499,6 +522,7 @@ footer .social {
     font-size: 40px;
     color: #DAF0EE;
     font-weight: bolder;
+    text-shadow: black 2px 2px;
 }
 
 .gridHijo1 p {
@@ -508,6 +532,7 @@ footer .social {
     font-weight: 400;
     margin-top: 30px;
     margin-left: 30px;
+    text-shadow: black 2px 2px;
 }
 
 /* POPULAR */
@@ -520,27 +545,27 @@ footer .social {
 
 .gridHijo5 .cardsTitle {
     display: inherit;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridHijo5 .cardsTitle h2 {
     text-align: center;
     width: 100%;
     padding: 0;
-   font-weight: 800;
+    font-weight: 800;
     font-size: 4vw;
     margin-top: 8vw;
     text-shadow: 2px 2px black;
     color: ghostwhite;
-   }
+}
 
 .gridHijo4 {
     background-color: #e7c084;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-   }
+}
 
 
 /* CARDS */
@@ -551,7 +576,7 @@ justify-content: center;
     width: 100%;
     min-height: 100vh;
     flex-wrap: wrap;
-   }
+}
 
 .card {
     background-color: white;
@@ -560,19 +585,19 @@ justify-content: center;
     margin: 10px;
     border-radius: 15px;
     position: relative;
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card .cardImg {
     height: 60%;
     width: 100%;
-   }
+}
 
 .card .cardImg img {
-object-fit: cover;
-border-top-right-radius: 15px;
-border-top-left-radius: 15px;
-border-bottom: 2px black solid;
+    object-fit: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 2px black solid;
 }
 
 .card h5 {
@@ -597,20 +622,20 @@ border-bottom: 2px black solid;
     border: 1px black solid;
     border-radius: 14px;
     background-color: #2e6021;
-    position: absolute;    
+    position: absolute;
     bottom: 0;
     margin: 0 0 10px 10px;
     padding: 5px;
-    display: flex;    
+    display: flex;
     align-items: center;
 }
 
 .card .cardBtn a {
     text-decoration: none;
     text-align: center;
-   font-size: 20px;
+    font-size: 20px;
     color: ghostwhite;
-    }
+}
 
 .card .cardBtn:hover {
     background-color: #508d41;
@@ -652,7 +677,7 @@ border-bottom: 2px black solid;
 }
 
 .gridHijo2 {
-    background-color:  #E7C084;
+    background-color: #E7C084;
 }
 
 .gridHijo3 h3 {
@@ -672,14 +697,14 @@ border-bottom: 2px black solid;
 }
 
 .gridHijo3 a {
-text-decoration: none;
-font-size: 28px;
-color: ghostwhite;
-background-color: #e7c084;
-border: 1px solid #76592E;
-margin-top: 35px;
-padding: 10px;
-border-radius: 14px;
+    text-decoration: none;
+    font-size: 28px;
+    color: ghostwhite;
+    background-color: #e7c084;
+    border: 1px solid #76592E;
+    margin-top: 35px;
+    padding: 10px;
+    border-radius: 14px;
 }
 
 /* CONTACTO--------------------------------------------------------------------------------------------- */
@@ -688,14 +713,14 @@ border-radius: 14px;
     padding: 14px;
     border: #76592E 2px solid;
     border-radius: 10px;
-    background-color:#E7C084;
+    background-color: #E7C084;
     width: 40%;
     box-shadow: 1px 1px black;
 }
 
 .formulario div {
     margin: 10px 10px;
-   display: grid;
+    display: grid;
 }
 
 .formulario input {
@@ -707,12 +732,12 @@ border-radius: 14px;
 }
 
 .formulario label {
-align-items: start;
-margin: 5px 0px;
-font-size: 3vh;
-font-weight: 600;
-text-decoration: underline;
-padding: 5px;
+    align-items: start;
+    margin: 5px 0px;
+    font-size: 3vh;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 5px;
 }
 
 .formulario textarea {
@@ -725,17 +750,17 @@ padding: 5px;
 
 .formCommentLabel {
     display: flex;
-align-items: start;
-font-size: 25px;
-padding: 5px;
+    align-items: start;
+    font-size: 25px;
+    padding: 5px;
 }
 
 .camposObligatorios {
-font-size: large;
-font-weight: 600;
-text-decoration: underline;
-margin: 10px 10px;
-padding: 10px;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 10px 10px;
+    padding: 10px;
 }
 
 .formButtons {
@@ -785,4 +810,72 @@ padding: 10px;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 8px;
+}
+
+/* FERIAS ARTESANALES ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.feriasMain {
+    background-image: url(../media/bg-pattern.webp);
+}
+
+.feriasTitle {
+    font-size: 3.5vh;
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.feriasDesc {
+    font-size: 2.5vh;
+    text-align: justify;
+    padding: 15px 30px;
+    }
+
+.feriasSubt {
+    font-size: 2.5vh;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+.feriasCardContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+
+
+.horariosFormat h3 {
+    font-size: 3.5vh;
+    color: ghostwhite;
+    text-shadow: black 2px 2px;
+    padding: 10px;
+}
+
+.feriasCardContainer p {
+    font-size: 2vh;
+    padding: 10px;
+    width: 100%;
+    color: ghostwhite;
+    opacity: .9;
+    text-shadow: black 2px 2px;
+    text-align: justify;
+}
+
+.feriasCardContainer iframe {
+    margin: 10px;
+    max-width: 100%;
+}
+
+.horariosFormat {
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #A27A3F;
+    border-radius: 10px;
+    border: 2px solid #76592E;
+    box-shadow: black 1px 1px;
+    display: inherit;
+    align-items: center;
+    flex-direction: column;
 }
