@@ -1,0 +1,233 @@
+.indexGridPadre {
+    display: grid;
+    grid-template-areas: "publi publi publi" "titulo titulo titulo" "populares populares populares" "foto1 novedades novedades";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 100px 1fr 600px;
+}
+
+.gridHijo1 {
+    grid-area: publi;
+    background-image: url(../media/baño-naturaleza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gridHijo2 {
+    grid-area: foto1;
+}
+
+.gridHijo3 {
+    grid-area: novedades;
+}
+
+.gridHijo4 {
+    grid-area: populares;
+}
+
+.gridHijo5 {
+    grid-area: titulo;
+}
+
+.indexGridPadre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CONTENIDO GRIDS */
+
+.gridHijo1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+
+    h1 {
+        padding: 14px;
+        font-size: 40px;
+        color: #DAF0EE;
+        font-weight: bolder;
+        text-shadow: black 2px 2px;
+    }
+
+    p {
+        padding: 14px;
+        font-size: 25px;
+        color: #DAF0EE;
+        font-weight: 400;
+        margin-top: 30px;
+        margin-left: 30px;
+        text-shadow: black 2px 2px;
+    }
+}
+
+/* POPULAR */
+
+.gridHijo5 {
+    background-color: #e7c084;
+    display: flex;
+    justify-content: center;
+
+    .cardsTitle {
+        display: inherit;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            @include textoSombreado;
+            text-align: center;
+            width: 100%;
+            padding: 0;
+            font-size: 4vw;
+            margin-top: 8vw;
+        }
+    }
+}
+
+.gridHijo4 {
+    background-color: #e7c084;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 80vh;
+    flex-wrap: wrap;
+}
+
+/* CARDS */
+
+.card {
+    background-color: white;
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+
+    .cardImg {
+        max-width: 100%;
+
+        img {
+            object-fit: contain;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom: 2px black solid;
+            width: 100%;
+        }
+    }
+
+    .cardTxt {
+        height: 60px;
+
+        h5 {
+            margin: auto;
+            font-size: 25px;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+
+    
+
+    .cardPrecio {
+        margin-bottom: 30px;
+        font-size: 25px;
+        padding: 10px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .cardBtn {
+        border: 1px black solid;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        background-color: #2e6021;
+        position: absolute;
+        bottom: 0;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+            color: ghostwhite;
+        }
+
+        &:hover {
+            background-color: #508d41;
+        }
+    }
+}
+
+/* TIPS - NOVEDADES */
+
+.gridHijo3 {
+    background-color: #226d33;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.custom-shape-divider-top-1699991003 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(180% + 1.3px);
+        height: 250px;
+    }
+
+    .shape-fill {
+        fill: #E7C084;
+    }
+}
+
+.gridHijo2 {
+    img {
+        border-top-right-radius: 9%;
+    }
+
+    background-color: #E7C084;
+}
+
+.gridHijo3 {
+    h3 {
+        text-align: center;
+        font-size: 40px;
+        color: ghostwhite;
+        padding: 25px 50px;
+        line-height: 50px;
+    }
+
+    p {
+        padding: 8px 40px;
+        font-size: 22px;
+        text-align: justify;
+        color: ghostwhite;
+        opacity: 0.8;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 28px;
+        color: ghostwhite;
+        background-color: #e7c084;
+        border: 1px solid #76592E;
+        margin-top: 35px;
+        padding: 10px;
+        border-radius: 14px;
+    }
+}

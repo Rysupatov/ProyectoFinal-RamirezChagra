@@ -1,0 +1,131 @@
+.mainTienda {
+    background-image: url(../media/bg-pattern-tienda.webp);
+}
+
+.tiendaContainer {
+    display: flex;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+// GRID AREAS
+
+.prodClass1 {
+    grid-area: prodClass1;
+}
+
+.tiendaProdCards1 {
+    grid-area: prodCards1;
+}
+
+.prodClass2 {
+    grid-area: prodClass2;
+}
+
+.tiendaProdCards2 {
+    grid-area: prodCards2;
+}
+
+.tiendaContainer {
+    grid-template-areas:
+        "prodClass1 prodClass1 prodClass1"
+        "prodCards1 prodCards1 prodCards1"
+        "prodClass2 prodClass2 prodClass2"
+        "prodCards2 prodCards2 prodCards2";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr 100px 1fr;
+}
+
+// PRODUCT CLASS TITLES
+
+.prodClass1,
+.prodClass2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 5vh;
+        font-weight: 800;
+        color: #A27A3F;
+        text-shadow: black 2px 2px;
+    }
+}
+
+// CARDS DE LA TIENDA
+
+.tiendaProdCards1,
+.tiendaProdCards2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tiendaCard {
+    width: 20%;
+    height: auto;
+    background-color: white;
+    margin: 10px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+
+    .tiendaCardImg {
+        max-width: 100%;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom: 2px black solid;
+        }
+    }
+
+    .tiendaCardTxt {
+        height: 60px;
+
+        h5 {
+            font-size: 25px;
+            padding: 10px;
+            text-align: center;
+            margin: 8px 0px;
+        }
+    }
+
+
+
+    .tiendaCardPrecio {
+        font-size: 25px;
+        font-weight: bolder;
+        padding: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .tiendaCardBtn {
+        border: 1px black solid;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        background-color: #2e6021;
+        position: absolute;
+        bottom: 0;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+            color: ghostwhite;
+        }
+
+        &:hover {
+            background-color: #508d41;
+        }
+    }
+}

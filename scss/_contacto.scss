@@ -1,0 +1,102 @@
+.formulario {
+    padding: 14px;
+    border: #76592E 2px solid;
+    border-radius: 10px;
+    background-color: #E7C084;
+    width: 40%;
+    box-shadow: 1px 1px black;
+
+    div {
+        margin: 10px 10px;
+        display: grid;
+    }
+
+    input {
+        justify-content: flex-end;
+        border: #000000 2px solid;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    label {
+        align-items: start;
+        margin: 5px 0px;
+        font-size: 3vh;
+        font-weight: 600;
+        text-decoration: underline;
+        padding: 5px;
+    }
+
+    textarea {
+        text-align: start;
+        border: #000000 2px solid;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+.formCommentLabel {
+    display: flex;
+    align-items: start;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.camposObligatorios {
+    font-size: large;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 10px 10px;
+    padding: 10px;
+}
+
+.formButtons {
+    display: flex;
+    justify-content: space-evenly;
+
+    input {
+        font-size: 18px;
+        padding: 5px 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: #508d41;
+        text-align: center;
+
+        &:hover {
+            background-color: #5d9c4d;
+        }
+    }
+}
+
+.contactoTitle {
+    font-size: 50px;
+    margin: 20px;
+    color: ghostwhite;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
+}
+
+.contactoSubtitle {
+    font-size: 30px;
+    margin: 20px;
+    font-weight: 600;
+    color: ghostwhite;
+    text-shadow: 2px 2px black;
+}
+
+.contactoMain {
+    background-image: url(../media/desierto.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contactoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 8px;
+}
