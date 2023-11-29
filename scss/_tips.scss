@@ -30,13 +30,18 @@
     align-self: center;
     color: ghostwhite;
 
-    ol li p {
-        text-align: left;
-        font-size: 2.3vh;
-        text-decoration: none;
-        padding: 3px;
-        text-shadow: black 2px 2px;
+    ol {
+        list-style: decimal;
+        li p {
+            text-align: left;
+            font-size: 2.3vh;
+            text-decoration: none;
+            padding: 8px;
+            line-height: 30px;
+        }
     }
+    
+    
 }
 
 .tipsVideo {

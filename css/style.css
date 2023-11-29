@@ -201,9 +201,9 @@ footer .social {
 
 /* CARDS */
 .card {
-  background-color: white;
   width: 20%;
   height: auto;
+  background-color: white;
   margin: 10px;
   border-radius: 15px;
   position: relative;
@@ -224,16 +224,20 @@ footer .social {
 }
 .card .cardTxt h5 {
   margin: auto;
-  font-size: 25px;
+  font-size: 3.5vh;
   padding: 10px;
   text-align: center;
 }
 .card .cardPrecio {
   margin-bottom: 30px;
-  font-size: 25px;
   padding: 10px;
   font-weight: bolder;
   text-align: center;
+  height: 60px;
+}
+.card .cardPrecio p {
+  font-size: 2.5vh;
+  padding-top: 10px;
 }
 .card .cardBtn {
   border: 1px black solid;
@@ -395,17 +399,21 @@ footer .social {
   height: 60px;
 }
 .tiendaCard .tiendaCardTxt h5 {
-  font-size: 25px;
+  margin: auto;
+  font-size: 3.5vh;
   padding: 10px;
   text-align: center;
-  margin: 8px 0px;
 }
 .tiendaCard .tiendaCardPrecio {
-  font-size: 25px;
-  font-weight: bolder;
-  padding: 10px;
   margin-bottom: 30px;
+  padding: 10px;
+  font-weight: bolder;
   text-align: center;
+  height: 60px;
+}
+.tiendaCard .tiendaCardPrecio p {
+  font-size: 2.5vh;
+  padding-top: 10px;
 }
 .tiendaCard .tiendaCardBtn {
   border: 1px black solid;
@@ -528,12 +536,15 @@ footer .social {
   align-self: center;
   color: ghostwhite;
 }
+.tipsLista ol {
+  list-style: decimal;
+}
 .tipsLista ol li p {
   text-align: left;
   font-size: 2.3vh;
   text-decoration: none;
-  padding: 3px;
-  text-shadow: black 2px 2px;
+  padding: 8px;
+  line-height: 30px;
 }
 
 .tipsVideo {
@@ -744,17 +755,6 @@ footer .social {
     margin-top: 50px;
     text-align: center;
   }
-  .card h5 {
-    font-size: 20px;
-    padding: 10px;
-  }
-  .card .cardTxt p {
-    display: none;
-  }
-  .card .cardPrecio {
-    font-size: 18px;
-    font-weight: bolder;
-  }
   .indexGridPadre .gridHijo5 .cardsTitle h2 {
     margin-top: 2vw;
     font-size: 4vw;
@@ -773,14 +773,6 @@ footer .social {
   .gridHijo4 .card {
     width: 100%;
     height: auto;
-  }
-  .card h5 {
-    font-size: 20px;
-    padding: 10px;
-  }
-  .gridHijo4 .card .cardPrecio p {
-    font-size: 35px;
-    font-weight: bolder;
   }
   .indexGridPadre .gridHijo5 .cardsTitle h2 {
     margin-top: 2vw;

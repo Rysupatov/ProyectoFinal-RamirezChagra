@@ -98,13 +98,7 @@
 /* CARDS */
 
 .card {
-    background-color: white;
-    width: 20%;
-    height: auto;
-    margin: 10px;
-    border-radius: 15px;
-    position: relative;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    @include cardBase;
 
     .cardImg {
         max-width: 100%;
@@ -122,10 +116,7 @@
         height: 60px;
 
         h5 {
-            margin: auto;
-            font-size: 25px;
-            padding: 10px;
-            text-align: center;
+           @include cardProdName;
         }
     }
 
@@ -133,10 +124,15 @@
 
     .cardPrecio {
         margin-bottom: 30px;
-        font-size: 25px;
         padding: 10px;
         font-weight: bolder;
         text-align: center;
+        height: 60px;
+
+        p{
+            font-size: 2.5vh;
+            padding-top: 10px;
+        }
     }
 
     .cardBtn {

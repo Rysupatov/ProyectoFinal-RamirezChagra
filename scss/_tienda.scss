@@ -64,13 +64,7 @@
 }
 
 .tiendaCard {
-    width: 20%;
-    height: auto;
-    background-color: white;
-    margin: 10px;
-    border-radius: 15px;
-    position: relative;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    @include cardBase;
 
     .tiendaCardImg {
         max-width: 100%;
@@ -88,21 +82,23 @@
         height: 60px;
 
         h5 {
-            font-size: 25px;
-            padding: 10px;
-            text-align: center;
-            margin: 8px 0px;
+            @include cardProdName;
         }
     }
 
 
 
     .tiendaCardPrecio {
-        font-size: 25px;
-        font-weight: bolder;
-        padding: 10px;
         margin-bottom: 30px;
+        padding: 10px;
+        font-weight: bolder;
         text-align: center;
+        height: 60px;
+
+        p {
+            font-size: 2.5vh;
+            padding-top: 10px;
+        }
     }
 
     .tiendaCardBtn {
