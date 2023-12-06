@@ -197,91 +197,35 @@
 
 // CONTACTO ------------------------------------------------------------------------------------------
 
+@media (max-width: 1024px) {
+  .contactoTxt {
+    order: -1;
+  }
+
+  .contactoTitle {
+    font-size: 60px;
+}
+
+.contactoSubtitle {
+    font-size: 40px;
+}
+}
+
 @media (max-width: 480px) {
   .contactoTxt {
     order: -1;
   }
 
-  .contactoContainer .formulario {
-    width: 90%;
-
-    form input {
-      font-size: 2vh;
-    }
-  }
-
-  .formulario form {
-
-    label,
-    textarea {
-      font-size: 2vh;
-    }
-  }
-
-  form {
-
-    .formCommentLabel,
-    .camposObligatorios {
-      font-size: 2vh;
-    }
-  }
-
-  .form .formulario .formButtons {
-    justify-content: space-evenly;
-  }
-
-  form .formulario .formButtons input {
-    font-size: 2vh;
-  }
-
-  .contactoTitle,
-  .contactoSubtitle {
-    text-align: center;
-  }
+  .contactoTitle {
+    font-size: 45px;
 }
 
-@media (max-width: 1200px) {
-  .contactoTxt {
-    order: -1;
-  }
-
-  .contactoContainer .formulario {
-    width: 90%;
-
-    form input {
-      font-size: 2.5vh;
-    }
-  }
-
-  .formulario form {
-
-    label,
-    textarea {
-      font-size: 2.5vh;
-    }
-  }
-
-  form {
-
-    .formCommentLabel,
-    .camposObligatorios {
-      font-size: 2.5vh;
-    }
-  }
-
-  .form .formulario .formButtons {
-    justify-content: space-evenly;
-  }
-
-  form .formulario .formButtons input {
-    font-size: 2.5vh;
-  }
-
-  .contactoTitle,
-  .contactoSubtitle {
-    text-align: center;
-  }
+.contactoSubtitle {
+    font-size: 30px;
 }
+}
+
+
 
 
 // FERIAS ------------------------------------------------------------------------------------------
