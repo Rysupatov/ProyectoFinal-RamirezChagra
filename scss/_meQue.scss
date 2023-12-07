@@ -1,3 +1,6 @@
+// MEDIA QUERIES DEL SITIO COMPLETO
+
+
 // HEADER - NAVBAR ------------------------------------------------------------------------------------------
 
 @media (min-width: 1024px) {
@@ -336,10 +339,36 @@
   .tiendaCard {
     width: 40%;
   }
+
+  .tiendaTitle1 {
+    h1 {
+        font-size: 38px;
+    }
+}
+
+.tiendaTitle2 {
+    h2 {
+        font-size: 20px;
+    }
+}
 }
 
 @media (max-width: 600px) {
   .tiendaCard {
     width: 90%;
   }
+
+  .tiendaTitle1 {
+    h1 {
+        font-size: 15vw;
+        text-align: center;
+    }
+}
+
+.tiendaTitle2 {
+    h2 {
+        font-size: 7vw;
+        text-align: center;
+    }
+}
 }

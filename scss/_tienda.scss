@@ -1,6 +1,10 @@
+// IMAGEN DE FONDO ----------------------------------------
+
 .mainTienda {
     background-image: url(../media/bg-pattern-tienda.webp);
 }
+
+// GRID -------------------------------------------------
 
 .tiendaContainer {
     display: flex;
@@ -9,7 +13,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-// GRID AREAS
+// GRID AREAS ---------------------------------------------
 
 .prodClass1 {
     grid-area: prodClass1;
@@ -37,7 +41,38 @@
     grid-template-rows: 100px 1fr 100px 1fr;
 }
 
-// PRODUCT CLASS TITLES
+
+// TITULO DE LA TIENDA -------------------------------
+
+.tiendaTitle {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tiendaTitle1 {
+    margin: 30px 0px;
+
+    h1 {
+        color: #000000;
+        font-weight: bold;
+        font-size: 60px;
+    }
+}
+
+.tiendaTitle2 {
+margin: 15px 0px;
+
+    h2 {
+        color: #000000;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+// TITULO DE CADA GRUPO DE PRODUCTOS -------------------------------------
 
 .prodClass1,
 .prodClass2 {
@@ -48,12 +83,12 @@
     p {
         font-size: 5vh;
         font-weight: 800;
-        color: #A27A3F;
+        color: #d6b27d;
         text-shadow: black 2px 2px;
     }
 }
 
-// CARDS DE LA TIENDA
+// CARDS DE PRODUCTOS ---------------------------------------------------
 
 .tiendaProdCards1,
 .tiendaProdCards2 {
@@ -81,7 +116,7 @@
     .tiendaCardTxt {
         height: 60px;
 
-        h5 {
+        h3 {
             @include cardProdName;
         }
     }

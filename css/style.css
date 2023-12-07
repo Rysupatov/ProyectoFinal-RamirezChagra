@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* RESET */
 * {
   padding: 0;
   margin: 0;
@@ -144,7 +143,6 @@ footer .social {
   object-fit: cover;
 }
 
-/* CONTENIDO GRIDS */
 .gridHijo1 {
   display: flex;
   flex-direction: column;
@@ -168,7 +166,6 @@ footer .social {
   text-shadow: black 2px 2px;
 }
 
-/* POPULAR */
 .gridHijo5 {
   background-color: #e7c084;
   display: flex;
@@ -200,7 +197,6 @@ footer .social {
   flex-wrap: wrap;
 }
 
-/* CARDS */
 .card {
   width: 20%;
   height: auto;
@@ -223,7 +219,7 @@ footer .social {
 .card .cardTxt {
   height: 60px;
 }
-.card .cardTxt h5 {
+.card .cardTxt h4 {
   margin: auto;
   font-size: 3.5vh;
   padding: 10px;
@@ -262,7 +258,6 @@ footer .social {
   background-color: #508d41;
 }
 
-/* TIPS - NOVEDADES */
 .gridHijo3 {
   background-color: #226d33;
   display: flex;
@@ -355,6 +350,32 @@ footer .social {
   grid-template-rows: 100px 1fr 100px 1fr;
 }
 
+.tiendaTitle {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tiendaTitle1 {
+  margin: 30px 0px;
+}
+.tiendaTitle1 h1 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.tiendaTitle2 {
+  margin: 15px 0px;
+}
+.tiendaTitle2 h2 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .prodClass1,
 .prodClass2 {
   display: flex;
@@ -365,7 +386,7 @@ footer .social {
 .prodClass2 p {
   font-size: 5vh;
   font-weight: 800;
-  color: #A27A3F;
+  color: #d6b27d;
   text-shadow: black 2px 2px;
 }
 
@@ -399,7 +420,7 @@ footer .social {
 .tiendaCard .tiendaCardTxt {
   height: 60px;
 }
-.tiendaCard .tiendaCardTxt h5 {
+.tiendaCard .tiendaCardTxt h3 {
   margin: auto;
   font-size: 3.5vh;
   padding: 10px;
@@ -464,13 +485,6 @@ footer .social {
   text-decoration: underline;
 }
 
-.feriasCardContainer {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
 .horariosFormat h3 {
   font-size: 3.5vh;
   color: ghostwhite;
@@ -478,6 +492,12 @@ footer .social {
   padding: 10px;
 }
 
+.feriasCardContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 .feriasCardContainer p {
   font-size: 2.5vh;
   padding: 10px;
@@ -486,6 +506,7 @@ footer .social {
   opacity: 0.9;
   text-shadow: black 2px 2px;
   text-align: justify;
+  height: 100px;
 }
 .feriasCardContainer iframe {
   margin: 10px;
@@ -847,10 +868,24 @@ footer .social {
   .tiendaCard {
     width: 40%;
   }
+  .tiendaTitle1 h1 {
+    font-size: 38px;
+  }
+  .tiendaTitle2 h2 {
+    font-size: 20px;
+  }
 }
 @media (max-width: 600px) {
   .tiendaCard {
     width: 90%;
+  }
+  .tiendaTitle1 h1 {
+    font-size: 15vw;
+    text-align: center;
+  }
+  .tiendaTitle2 h2 {
+    font-size: 7vw;
+    text-align: center;
   }
 }
 

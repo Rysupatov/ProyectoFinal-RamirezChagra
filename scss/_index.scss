@@ -1,3 +1,8 @@
+// PAGINA INDEX
+
+
+// GRID-----------------------------------
+
 .indexGridPadre {
     display: grid;
     grid-template-areas: "publi publi publi" "titulo titulo titulo" "populares populares populares" "foto1 novedades novedades";
@@ -12,6 +17,8 @@
     background-size: cover;
     background-position: center;
 }
+
+// GRID AREAS -------------------------------------------
 
 .gridHijo2 {
     grid-area: foto1;
@@ -35,7 +42,10 @@
     object-fit: cover;
 }
 
-/* CONTENIDO GRIDS */
+// GRIDS INDIVIDUALES ESTILO-------------------------------------------
+
+
+// ENCABEZADO --------------------------------------------------------
 
 .gridHijo1 {
     display: flex;
@@ -62,7 +72,7 @@
     }
 }
 
-/* POPULAR */
+// SECTOR DE PRODUCTOS POPULARES ------------------------------------------
 
 .gridHijo5 {
     background-color: #e7c084;
@@ -95,7 +105,7 @@
     flex-wrap: wrap;
 }
 
-/* CARDS */
+// CARDS DE LOS PRODUCTOS POPULARES ------------------------------------
 
 .card {
     @include cardBase;
@@ -115,7 +125,7 @@
     .cardTxt {
         height: 60px;
 
-        h5 {
+        h4 {
            @include cardProdName;
         }
     }
@@ -160,7 +170,7 @@
     }
 }
 
-/* TIPS - NOVEDADES */
+// SECTOR DE DERIVACIÓN A LA PAGINA DE TIPS PARA AHORRO Y USO DE PRODUCTOS- ---------------------------
 
 .gridHijo3 {
     background-color: #226d33;
